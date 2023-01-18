@@ -9,12 +9,16 @@ body {
   color: white;
   height: 100vh;
 }
+
 header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 48px;
+  position: fixed;
+  width: 100%;
 }
+
 button {
   padding: 16px 24px;
   border-radius: 8px;
@@ -34,7 +38,8 @@ button {
 
 #form-habits {
   display: flex;
-  padding: 0 48px;
+  padding: 182px 48px 48px;
+  width: fit-content;
 }
 
 .habits {
@@ -84,4 +89,10 @@ input {
 input:checked {
   background-color: #8b5cf6;
   border: 2px solid a78bfa;
+}
+
+@media (max-width: 570px) {
+  button div {
+    display: none;
+  }
 }
